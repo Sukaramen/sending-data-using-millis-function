@@ -17,10 +17,10 @@ unsigned long led2_interval = 250;  // Delay berkedip selama 250ms
 unsigned long data1_interval = 100; // Delay pengiriman data1 selama 100ms
 unsigned long data2_interval = 100; // Delay pengiriman data2 selama 100ms
 
-#define FIREBASE_HOST "https://data-send-bb778-default-rtdb.firebaseio.com/"
-#define FIREBASE_TOKEN "VjqO7TLaY9GDl6NlL8ju9LmxmFt7SrujTEo8c5ca"
-const char* ssid = "Wokwi-GUEST";
-const char* pass = "";
+#define FIREBASE_HOST "****************"
+#define FIREBASE_TOKEN "****************"
+const char* ssid = "****************T";
+const char* pass = "****************";
 
 int led1_state = LOW;
 int led2_state = LOW;

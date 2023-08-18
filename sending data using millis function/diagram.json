@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "TN Alchemist",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": -149.75, "left": 143.05, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -149.86,
+      "left": 25.28,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -150.43,
+      "left": 64.97,
+      "attrs": { "color": "red" }
+    },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -203.86, "left": 291.74, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "led1:C", "esp:GND.1", "green", [ "v175.21", "h222.88", "v-79.12" ] ],
+    [ "led2:C", "esp:GND.1", "green", [ "v161.73", "h208.55", "v-59.14" ] ],
+    [ "led2:A", "esp:D2", "green", [ "v0" ] ],
+    [ "led1:A", "esp:D4", "green", [ "v0" ] ],
+    [ "dht1:SDA", "esp:D5", "green", [ "v0" ] ],
+    [ "dht1:VCC", "esp:VIN", "red", [ "v195.68", "h-185.05", "v-97.87" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

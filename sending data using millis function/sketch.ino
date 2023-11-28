@@ -19,7 +19,7 @@ unsigned long data2_interval = 100; // Delay pengiriman data2 selama 100ms
 
 #define FIREBASE_HOST "****************"
 #define FIREBASE_TOKEN "****************"
-const char* ssid = "****************T";
+const char* ssid = "****************";
 const char* pass = "****************";
 
 int led1_state = LOW;
